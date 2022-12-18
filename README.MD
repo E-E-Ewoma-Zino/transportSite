@@ -1,6 +1,7 @@
 # Transport And Logistics
 
 A site that deals with the transporting of goods and products world wide.
+Fully HTML and Responsive
 
 ### Pages
 * HOME
