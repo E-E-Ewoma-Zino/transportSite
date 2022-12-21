@@ -16,7 +16,7 @@
 	content: "";
 	width: 80px;
 	height: 80px;
-	border: 3px solid #ff7f24;
+	border: 3px solid #ffb783;
 	display: block;
 	border-radius: 50%;
 	position: absolute;
@@ -34,7 +34,7 @@
 	content: "";
 	width: 80px;
 	height: 80px;
-	border: 3px solid #ff7f24;
+	border: 3px solid #ffb783;
 	display: block;
 	border-radius: 50%;
 	position: absolute;
@@ -77,12 +77,12 @@
 
 a:hover,
 a:active {
-	color: #ff7f24;
+	color: #ffb783;
 	text-decoration: none
 }
 
 .bg-primary {
-	background-color: #ff7f24 !important
+	background-color: #ffb783 !important
 }
 
 .bg-secondary {
@@ -94,7 +94,7 @@ a:active {
 }
 
 .primary-overlay[data-overlay-dark]:before {
-	background: #ff7f24
+	background: #ffb783
 }
 
 .secondary-overlay[data-overlay-dark]:before {
@@ -112,7 +112,7 @@ a:active {
 
 .text-primary,
 .text-primary-hover:hover {
-	color: #ff7f24 !important
+	color: #ffb783 !important
 }
 
 .text-secondary,
@@ -125,13 +125,13 @@ a:active {
 }
 
 .border-primary {
-	border-color: #ff7f24 !important
+	border-color: #ffb783 !important
 }
 
 a.text-primary:focus,
 a.text-primary:hover,
 a.text-primary:active {
-	color: #ff7f24 !important
+	color: #ffb783 !important
 }
 
 .cursor-pointer {
@@ -170,8 +170,8 @@ a.text-primary:active {
 	right: 20px;
 	display: none;
 	border-radius: 50%;
-	background: #ff7f24;
-	border: 1px solid #ff7f24;
+	background: #ffb783;
+	border: 1px solid #ffb783;
 	width: 35px;
 	height: 35px;
 	line-height: 30px;
@@ -377,7 +377,7 @@ a.text-primary:active {
 	text-align: center;
 	cursor: pointer;
 	color: #ffffff;
-	background-color: #ff7f24;
+	background-color: #ffb783;
 	border: none;
 	z-index: 2;
 	overflow: hidden;
@@ -532,11 +532,11 @@ a.text-primary:active {
 
 .menu_area-light .navbar-nav li.current>a,
 .menu_area-light .navbar-nav li.active>a {
-	color: #ff7f24
+	color: #ffb783
 }
 
 .menu_area-light .navbar>ul>li.current>a:after {
-	border-color: transparent #ff7f24 #ff7f24 transparent
+	border-color: transparent #ffb783 #ffb783 transparent
 }
 
 .menu_area-light.scrollHeader .navbar-nav li.current>a {
@@ -559,11 +559,11 @@ a.text-primary:active {
 
 	.menu_area-light .navbar ul ul li.active>a,
 	.menu_area-light .navbar-nav li.has-sub a:hover {
-		color: #ff7f24
+		color: #ffb783
 	}
 
 	.menu_area-light .navbar>ul>li.has-sub>a:hover:after {
-		border-color: transparent #ff7f24 #ff7f24 transparent
+		border-color: transparent #ffb783 #ffb783 transparent
 	}
 
 	.menu_area-light.scrollHeader .navbar>ul>li.has-sub>a:hover:after {
@@ -657,7 +657,7 @@ a.text-primary:active {
 	width: 16px;
 	height: 16px;
 	box-sizing: border-box;
-	background-color: #ff7f24;
+	background-color: #ffb783;
 	border: 3px solid transparent;
 	border-radius: 50%;
 	-webkit-transform: scale(0.6);
@@ -669,7 +669,7 @@ a.text-primary:active {
 .slider-fade1.owl-theme .owl-dots .owl-dot.active span,
 .slider-fade1.owl-theme .owl-dots .owl-dot:hover span {
 	background-color: transparent;
-	border-color: #ff7f24;
+	border-color: #ffb783;
 	-webkit-transform: scale(0.9);
 	transform: scale(0.9)
 }
@@ -682,7 +682,7 @@ a.text-primary:active {
 	width: 60px;
 	height: 60px;
 	border: none;
-	background: #ff7f24;
+	background: #ffb783;
 	border-radius: 60px;
 	line-height: 65px;
 	transition-duration: 500ms;
@@ -701,12 +701,12 @@ a.text-primary:active {
 
 .slider-fade1.owl-theme .owl-nav .owl-next:hover {
 	opacity: 1;
-	background: #ff7f24
+	background: #ffb783
 }
 
 .slider-fade1.owl-theme .owl-nav .owl-prev:hover {
 	opacity: 1;
-	background: #ff7f24
+	background: #ffb783
 }
 
 .slider-fade1 .owl-nav i,
@@ -731,7 +731,7 @@ a.text-primary:active {
 	padding-top: 8px;
 	z-index: 1;
 	font-weight: 700;
-	color: #ff7f24;
+	color: #ffb783;
 	text-transform: uppercase
 }
 
@@ -745,7 +745,7 @@ a.text-primary:active {
 	right: -7px;
 	clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%, 60% 0%);
 	opacity: 0.3;
-	background: #ff7f24
+	background: #ffb783
 }
 
 .shape1 {
@@ -805,7 +805,7 @@ a.text-primary:active {
 	font-weight: 700;
 	display: inline-block;
 	margin-bottom: 10px;
-	color: #ff7f24;
+	color: #ffb783;
 	padding-left: 28px;
 	text-transform: uppercase;
 	letter-spacing: 2.2px
@@ -826,7 +826,7 @@ a.text-primary:active {
 	content: '';
 	width: 10px;
 	height: 10px;
-	background: #ff7f24;
+	background: #ffb783;
 	border-radius: 50%;
 	left: 3px;
 	position: absolute;
@@ -846,7 +846,7 @@ a.text-primary:active {
 
 .title-sm:before {
 	content: '';
-	background: #ff7f24;
+	background: #ffb783;
 	height: 8px;
 	width: 100%;
 	position: absolute;
@@ -943,7 +943,7 @@ a.text-primary:active {
 	content: '';
 	width: 10px;
 	height: 10px;
-	background: #ff7f24;
+	background: #ffb783;
 	border-radius: 50%;
 	display: inline-block;
 	right: -2px;
@@ -1045,7 +1045,7 @@ a.text-primary:active {
 	z-index: 1;
 	height: 80px;
 	width: 80px;
-	background: #ff7f24;
+	background: #ffb783;
 	text-align: center;
 	display: inline-block;
 	line-height: 80px;
@@ -1226,7 +1226,7 @@ a.text-primary:active {
 }
 
 .pagination .active a {
-	background-color: #ff7f24;
+	background-color: #ffb783;
 	color: #999;
 	cursor: default
 }
@@ -1236,7 +1236,7 @@ a.text-primary:active {
 }
 
 .pagination a:hover {
-	background-color: #ff7f24;
+	background-color: #ffb783;
 	color: #fff
 }
 
@@ -1318,7 +1318,7 @@ a.text-primary:active {
 .card-style2 .icon-wrap ul li a {
 	color: #fff;
 	display: inline-block;
-	background: #ff7f24;
+	background: #ffb783;
 	width: 40px;
 	height: 40px;
 	line-height: 40px;
@@ -1445,7 +1445,7 @@ a.text-primary:active {
 }
 
 .card-style4 .read-more {
-	color: #ff7f24;
+	color: #ffb783;
 	font-size: 13px;
 	font-weight: 500;
 	letter-spacing: 1px;
@@ -1535,7 +1535,7 @@ a.text-primary:active {
 }
 
 .card-style5 .card-body h3 a:hover {
-	color: #ff7f24 !important
+	color: #ffb783 !important
 }
 
 .accordion-style .card {
@@ -1613,7 +1613,7 @@ a.text-primary:active {
 	width: 24px;
 	top: 24px;
 	position: absolute;
-	color: #ff7f24;
+	color: #ffb783;
 	text-align: center
 }
 
@@ -1702,7 +1702,7 @@ a.text-primary:active {
 }
 
 .accordion .accordion-button.collapsed:after {
-	background: #ff7f24;
+	background: #ffb783;
 	border: none;
 	content: "+";
 	right: 20px;
@@ -1719,14 +1719,14 @@ a.text-primary:active {
 }
 
 .accordion .accordion-button:after {
-	background: #ff7f24;
+	background: #ffb783;
 	border: none;
 	content: "-";
 	right: 20px;
 	border-radius: 5px;
 	left: inherit;
 	font-size: 18px;
-	border: 1px solid #ff7f24;
+	border: 1px solid #ffb783;
 	transform: none;
 	width: 25px;
 	height: 25px;
@@ -1783,7 +1783,7 @@ a.text-primary:active {
 
 .accordion.style1 .accordion-button.collapsed:after {
 	background: #ffffff;
-	color: #ff7f24
+	color: #ffb783
 }
 
 .accordion.style1 .card-body {
@@ -2357,7 +2357,7 @@ h2.resp-accordion.resp-tab-active {
 	display: flex;
 	align-items: center;
 	color: #fff;
-	background: #ff7f24;
+	background: #ffb783;
 	transition: all .3s;
 	font-size: 40px
 }
@@ -2449,7 +2449,7 @@ h2.resp-accordion.resp-tab-active {
 }
 
 .process-style2:hover .icon-box {
-	background: #ff7f24
+	background: #ffb783
 }
 
 .process-style2 .process-content {
@@ -2472,7 +2472,7 @@ h2.resp-accordion.resp-tab-active {
 	content: '';
 	width: 5px;
 	height: 5px;
-	background-color: #ff7f24;
+	background-color: #ffb783;
 	left: -3px
 }
 
@@ -2569,7 +2569,7 @@ h2.resp-accordion.resp-tab-active {
 	left: -42px;
 	top: 0px;
 	bottom: 0px;
-	border-left: 2px solid #ff7f24
+	border-left: 2px solid #ffb783
 }
 
 .since .txt {
@@ -2702,7 +2702,7 @@ h2.resp-accordion.resp-tab-active {
 	width: 16px;
 	height: 16px;
 	box-sizing: border-box;
-	background-color: #ff7f24;
+	background-color: #ffb783;
 	border: 3px solid transparent;
 	border-radius: 50%;
 	-webkit-transform: scale(0.6);
@@ -2714,7 +2714,7 @@ h2.resp-accordion.resp-tab-active {
 .owl-theme .owl-dots .owl-dot.active span,
 .owl-theme .owl-dots .owl-dot:hover span {
 	background-color: transparent;
-	border-color: #ff7f24;
+	border-color: #ffb783;
 	-webkit-transform: scale(0.9);
 	transform: scale(0.9)
 }
@@ -2746,7 +2746,7 @@ h2.resp-accordion.resp-tab-active {
 	top: 1px;
 	z-index: 1;
 	font-weight: 600;
-	color: #ff7f24
+	color: #ffb783
 }
 
 @media screen and (max-width: 767px) {
@@ -2775,7 +2775,7 @@ h2.resp-accordion.resp-tab-active {
 	top: 1px;
 	z-index: 1;
 	font-weight: 600;
-	color: #ff7f24
+	color: #ffb783
 }
 
 .list-style2 li:last-child {
@@ -3074,7 +3074,7 @@ h2.resp-accordion.resp-tab-active {
 	top: 1px;
 	z-index: 1;
 	font-weight: 600;
-	color: #ff7f24
+	color: #ffb783
 }
 
 .blogs .blog-post-tag {
@@ -3191,7 +3191,7 @@ h2.resp-accordion.resp-tab-active {
 	font-size: 14px;
 	text-align: center;
 	color: #ffffff;
-	background: #ff7f24;
+	background: #ffb783;
 	height: 36px;
 	line-height: 36px;
 	width: 36px;
@@ -3229,7 +3229,7 @@ h2.resp-accordion.resp-tab-active {
 }
 
 .cat-list li a:hover {
-	background: #ff7f24;
+	background: #ffb783;
 	color: #ffffff
 }
 
@@ -3283,9 +3283,9 @@ h2.resp-accordion.resp-tab-active {
 }
 
 .blog-tags li a:hover {
-	background: #ff7f24;
+	background: #ffb783;
 	color: #ffffff;
-	border: 1px solid #ff7f24;
+	border: 1px solid #ffb783;
 	color: #fff
 }
 
@@ -3312,7 +3312,7 @@ h2.resp-accordion.resp-tab-active {
 
 .side-bar .widget .social-icons li a:hover {
 	color: #ffffff;
-	background-color: #ff7f24
+	background-color: #ffb783
 }
 
 @media screen and (max-width: 991px) {
@@ -3364,7 +3364,7 @@ h2.resp-accordion.resp-tab-active {
 	font-weight: 800;
 	display: block;
 	margin-bottom: 1.5rem;
-	color: #ff7f24;
+	color: #ffb783;
 	padding-left: 32px;
 	text-transform: uppercase;
 	letter-spacing: 1px
@@ -3385,7 +3385,7 @@ h2.resp-accordion.resp-tab-active {
 	content: '';
 	width: 10px;
 	height: 10px;
-	background: #ff7f24;
+	background: #ffb783;
 	border-radius: 50%;
 	left: 3px;
 	position: absolute;
@@ -3419,7 +3419,7 @@ h2.resp-accordion.resp-tab-active {
 .sidebar .services-list li:hover a,
 .sidebar .services-list li:focus a {
 	color: #ffffff;
-	background: #ff7f24
+	background: #ffb783
 }
 
 .sidebar .services-list li.active a:after,
@@ -3465,7 +3465,7 @@ h2.resp-accordion.resp-tab-active {
 	top: 0;
 	text-align: center;
 	font-size: 13px;
-	background: #ff7f24;
+	background: #ffb783;
 	color: #ffffff;
 	width: 50px;
 	padding: 2px 0
@@ -3492,7 +3492,7 @@ h2.resp-accordion.resp-tab-active {
 	font-size: 14px;
 	text-align: center;
 	color: #ffffff;
-	background: #ff7f24;
+	background: #ffb783;
 	height: 36px;
 	line-height: 36px;
 	width: 36px;
@@ -3500,7 +3500,7 @@ h2.resp-accordion.resp-tab-active {
 }
 
 .sidebar .widget-info .social-icons li a:hover {
-	color: #ff7f24;
+	color: #ffb783;
 	background-color: #fff
 }
 
@@ -3621,7 +3621,7 @@ h2.resp-accordion.resp-tab-active {
 .prev-page a {
 	justify-content: flex-start;
 	text-align: left;
-	background: #ff7f24
+	background: #ffb783
 }
 
 .prev-page a:hover .image-prev:after {
@@ -3644,7 +3644,7 @@ h2.resp-accordion.resp-tab-active {
 }
 
 .next-page .image-next:after {
-	background-color: #ff7f24
+	background-color: #ffb783
 }
 
 .prev-page .image-prev:before {
@@ -3788,7 +3788,7 @@ h2.resp-accordion.resp-tab-active {
 
 .prev-page .image-prev.no_image:after,
 .next-page .image-next.no_image:after {
-	background: #ff7f24
+	background: #ffb783
 }
 
 .prev-page .image-prev.no_image:before,
@@ -3810,7 +3810,7 @@ h2.resp-accordion.resp-tab-active {
 }
 
 .next-page .image-next.no_image:after {
-	background: #ff7f24
+	background: #ffb783
 }
 
 @media screen and (max-width: 767px) {
@@ -3856,7 +3856,7 @@ h2.resp-accordion.resp-tab-active {
 	height: 50px;
 	width: 50px;
 	position: absolute;
-	background-color: #ff7f24;
+	background-color: #ffb783;
 	top: -32px;
 	border-radius: 50%;
 	right: 0px
@@ -3867,7 +3867,7 @@ h2.resp-accordion.resp-tab-active {
 	height: 15px;
 	width: 15px;
 	border-radius: 50%;
-	background-color: #ff7f24;
+	background-color: #ffb783;
 	position: absolute;
 	right: 50px;
 	top: 37px
@@ -3878,7 +3878,7 @@ h2.resp-accordion.resp-tab-active {
 	height: 7px;
 	width: 7px;
 	border-radius: 50%;
-	background-color: #ff7f24;
+	background-color: #ffb783;
 	position: absolute;
 	right: 68px;
 	top: 49px
@@ -3904,7 +3904,7 @@ h2.resp-accordion.resp-tab-active {
 .top-round-shape {
 	width: 140px;
 	height: 70px;
-	background-color: #ff7f24;
+	background-color: #ffb783;
 	border-radius: 0 0 100px 100px;
 	position: absolute;
 	top: 0;
@@ -3917,7 +3917,7 @@ h2.resp-accordion.resp-tab-active {
 	height: 45px;
 	width: 45px;
 	border-radius: 50%;
-	background-color: #ff7f24;
+	background-color: #ffb783;
 	position: absolute;
 	left: 145px;
 	top: 17px
@@ -3928,7 +3928,7 @@ h2.resp-accordion.resp-tab-active {
 	height: 20px;
 	width: 20px;
 	border-radius: 50%;
-	background-color: #ff7f24;
+	background-color: #ffb783;
 	position: absolute;
 	left: 200px;
 	top: 47px
@@ -4018,7 +4018,7 @@ h2.resp-accordion.resp-tab-active {
 	font-weight: 700;
 	font-family: Font Awesome\ 5 Free;
 	display: block;
-	color: #ff7f24;
+	color: #ffb783;
 	top: 60px;
 	transform: translateY(-50%);
 	right: -34px;
@@ -4129,7 +4129,7 @@ h2.resp-accordion.resp-tab-active {
 .testimonial-shape {
 	width: 60px;
 	height: 120px;
-	background-color: #ff7f24;
+	background-color: #ffb783;
 	border-radius: 100px 0 0 100px;
 	position: absolute;
 	top: 0px;
@@ -4141,7 +4141,7 @@ h2.resp-accordion.resp-tab-active {
 	height: 40px;
 	width: 40px;
 	border-radius: 50%;
-	background-color: #ff7f24;
+	background-color: #ffb783;
 	position: absolute;
 	right: 14px;
 	bottom: -50px
@@ -4152,7 +4152,7 @@ h2.resp-accordion.resp-tab-active {
 	height: 20px;
 	width: 20px;
 	border-radius: 50%;
-	background-color: #ff7f24;
+	background-color: #ffb783;
 	position: absolute;
 	right: 44px;
 	bottom: -82px
@@ -4167,7 +4167,7 @@ h2.resp-accordion.resp-tab-active {
 .left-round-shape {
 	width: 60px;
 	height: 120px;
-	background-color: #ff7f24;
+	background-color: #ffb783;
 	border-radius: 0 100px 100px 0;
 	position: absolute;
 	bottom: 120px;
@@ -4179,7 +4179,7 @@ h2.resp-accordion.resp-tab-active {
 	height: 40px;
 	width: 40px;
 	border-radius: 50%;
-	background-color: #ff7f24;
+	background-color: #ffb783;
 	position: absolute;
 	left: 14px;
 	top: -50px
@@ -4190,7 +4190,7 @@ h2.resp-accordion.resp-tab-active {
 	height: 20px;
 	width: 20px;
 	border-radius: 50%;
-	background-color: #ff7f24;
+	background-color: #ffb783;
 	position: absolute;
 	left: 44px;
 	top: -82px
@@ -4345,7 +4345,7 @@ h2.resp-accordion.resp-tab-active {
 
 .career-content .career-time {
 	background: rgba(233, 196, 106, 0.25);
-	color: #ff7f24;
+	color: #ffb783;
 	font-size: 15px;
 	font-weight: 700;
 	padding: 6px 11px;
@@ -4450,7 +4450,7 @@ h2.resp-accordion.resp-tab-active {
 .team-info li span {
 	font-weight: 600;
 	flex-basis: 20%;
-	color: #ff7f24
+	color: #ffb783
 }
 
 .team-social-box {
@@ -4471,7 +4471,7 @@ h2.resp-accordion.resp-tab-active {
 	line-height: 45px;
 	font-size: 16px;
 	display: inline-block;
-	background: #ff7f24;
+	background: #ffb783;
 	color: #ffffff
 }
 
@@ -4583,7 +4583,7 @@ h2.resp-accordion.resp-tab-active {
 	font-size: 14px;
 	border-radius: 5px;
 	display: inline-block;
-	background: #ff7f24;
+	background: #ffb783;
 	color: #ffffff
 }
 
@@ -4676,7 +4676,7 @@ h2.resp-accordion.resp-tab-active {
 	display: block;
 	margin-bottom: 15px;
 	font-size: 28px;
-	color: #ff7f24
+	color: #ffb783
 }
 
 pre[class*="language-"] {
@@ -4750,7 +4750,7 @@ pre[class*="language-"] {
 
 .copy-element>a:hover,
 .source-element>a:hover {
-	background: #ff7f24;
+	background: #ffb783;
 	color: #fff !important
 }
 
@@ -4819,7 +4819,7 @@ pre[class*="language-"] {
 	padding-left: 35px;
 	line-height: 1;
 	display: inline-block;
-	color: #ff7f24;
+	color: #ffb783;
 	font-size: 1.75rem
 }
 
@@ -4838,7 +4838,7 @@ pre[class*="language-"] {
 	content: '';
 	width: 10px;
 	height: 10px;
-	background: #ff7f24;
+	background: #ffb783;
 	border-radius: 50%;
 	left: 3px;
 	position: absolute;
@@ -5232,7 +5232,7 @@ pre[class*="language-"] {
 	right: 1px;
 	top: 1px;
 	width: auto;
-	background: #ff7f24;
+	background: #ffb783;
 	height: 48px;
 	border-left: 1px solid rgba(0, 0, 0, 0.05);
 	-webkit-border-top-right-radius: 0.25em;
@@ -5328,7 +5328,7 @@ pre[class*="language-"] {
 .newsletter-content i.ti-email {
 	height: 80px;
 	width: 100px;
-	background-color: #ff7f24;
+	background-color: #ffb783;
 	color: #fff;
 	display: block;
 	font-size: 35px;
@@ -5361,7 +5361,7 @@ pre[class*="language-"] {
 }
 
 .social-icon-style1 li a:hover {
-	background: #ff7f24
+	background: #ffb783
 }
 
 .footer-bg-right {
@@ -5404,11 +5404,11 @@ footer {
 }
 
 .footer-list li a:hover {
-	color: #ff7f24
+	color: #ffb783
 }
 
 .footer-list li a:hover:before {
-	color: #ff7f24
+	color: #ffb783
 }
 
 .buy-theme {
@@ -5447,7 +5447,7 @@ footer {
 }
 
 .all-demo:hover {
-	background: #ff7f24
+	background: #ffb783
 }
 
 .buy-theme span,
@@ -5486,7 +5486,7 @@ footer {
 	position: fixed;
 	top: 185px;
 	right: -105px;
-	background: #ff7f24;
+	background: #ffb783;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 	z-index: 9999
 }
