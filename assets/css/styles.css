@@ -1357,9 +1357,10 @@ a.text-primary:active {
 .card-flip-details {
 	position: relative;
 	width: 100%;
-	height: 100%;
-	transition: transform .5s ease-in-out;
-	transform-style: preserve-3d
+	height: 16em;
+	transition: all .8s ease-in-out;
+	transform-style: preserve-3d;
+
 }
 
 .card-flip-front {
@@ -1404,7 +1405,8 @@ a.text-primary:active {
 }
 
 .card-style3:hover .card-flip-details {
-	transform: rotateY(180deg)
+	transform: rotateY(180deg);
+	height: 30em;
 }
 
 .card-style4 {
@@ -5500,5 +5502,10 @@ footer {
 	.img3 {
 		height: 50vmin;
 		object-fit: cover;
-	}	
+	}
+}
+
+.my-img-fit {
+	/* height: 30em; */
+	/* object-fit: cover; */
 }
