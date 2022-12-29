@@ -5490,3 +5490,15 @@ footer {
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 	z-index: 9999
 }
+
+.img3 {
+	height: 60vmin;
+	object-fit: cover;
+}
+
+@media screen and (min-width: 991px) {
+	.img3 {
+		height: 50vmin;
+		object-fit: cover;
+	}	
+}
