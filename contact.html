@@ -250,7 +250,7 @@
 		<section class="contact-style02 pt-0 position-relative wow fadeIn" data-wow-delay="400ms">
 			<div class="container-fluid px-sm-5">
 				<div class="row g-0 p-0 m-0">
-					<div class="col-md-5 col-lg-4 col-xl-3">
+					<div class="col-12">
 						<div class="inner-container bg-secondary">
 							<ul class="info-box p-4 p-xxl-5 list-unstyled mb-0">
 								<li class="single-item wow fadeInUp" data-wow-delay="100ms">
@@ -269,19 +269,20 @@
 											<i class="far fa-envelope-open text-primary fs-3"></i>
 										</div>
 										<div class="flex-grow-1 ms-3">
-											<span class="d-block mb-1 text-white">info@example.com</span>
-											<span class="text-white">contact@example.com</span>
+											<span class="d-block mb-1 text-white">sales@dockcontainers.com</span>
 										</div>
 									</div>
 								</li>
 								<li class="single-item wow fadeInUp" data-wow-delay="500ms">
-									<div class="d-flex">
+									<div class="d-flex flex-column flex-md-row">
 										<div class="flex-shrink-0 mt-2">
 											<i class="fas fa-map-marker-alt text-primary fs-3"></i>
 										</div>
 										<div class="flex-grow-1 ms-3">
-											<address class="d-block mb-0 text-white">21151 S Western Ave, Torrance, CA
-												90501</address>
+											<address class="d-block mb-0 text-white">1254 W University Ave, Flagstaff, Arizona 86001</address>
+										</div>
+										<div class="flex-shrink-0 mt-2">
+											<i class="fas fa-map-marker-alt text-primary fs-3"></i>
 										</div>
 										<div class="flex-grow-1 ms-3">
 											<address class="d-block mb-0 text-white">Operational Port(POLB).</address>
@@ -291,11 +292,6 @@
 									</div>
 								</li>
 							</ul>
-						</div>
-					</div>
-					<div class="col-md-7 col-lg-8 col-xl-9 overflow-hidden">
-						<div class="map-inner h-100">
-							<iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3314.0444771691855!2d-118.30997!3d33.8369636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dd4aafec45d8b3%3A0xb62f5dac8b02630d!2s21151%20S%20Western%20Ave%2C%20Torrance%2C%20CA%2090501%2C%20USA!5e0!3m2!1sen!2sng!4v1672758419960!5m2!1sen!2sng" scrolling="no" marginheight="0" marginwidth="0" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 						</div>
 					</div>
 				</div>
@@ -409,7 +405,42 @@
 			</div>
 		</footer>
 	</div>
-	<div id="mymodal"></div>
+	
+<!-- Vertically centered -->
+<div class="modal fade" id="centered" tabindex="-1" aria-labelledby="centeredLabel" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="centeredLabel">Mail Sent</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body">
+				Thank you for sending us a mail, we will reply you soon.
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Vertically centered -->
+<div class="modal fade" id="ncentered" tabindex="-1" aria-labelledby="centeredLabel" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="centeredLabel">Failed</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body">
+				Something went wrong! Please try again later.
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+			</div>
+		</div>
+	</div>
+</div>
 	<!-- SCROLL TO TOP
     ================================================== -->
 	<a href="/#!" class="scroll-to-top"><i class="fas fa-angle-up" aria-hidden="true"></i></a>
