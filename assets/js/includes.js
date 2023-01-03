@@ -1,6 +1,5 @@
 // this script includes all partials to the page
 
-$("head").load("/partials/_head.html");
 $("header").load("/partials/_nav.html");
 $("#testimonials").load("/components/testimonials.html");
 $("#contactForm").load("/components/contactForm.html");
