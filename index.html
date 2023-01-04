@@ -448,7 +448,7 @@
 												<label for="name">Your Name <span class="quform-required">*</span></label>
 												<div class="quform-input">
 													<input class="form-control" id="name" type="text" name="name"
-														placeholder="Your name here" />
+														placeholder="Your name here" required />
 												</div>
 											</div>
 										</div>
@@ -459,7 +459,7 @@
 												<label for="email">Your Email<span class="quform-required">*</span></label>
 												<div class="quform-input">
 													<input class="form-control" id="email" type="text" name="email"
-														placeholder="Your email here" />
+														placeholder="Your email here" required />
 												</div>
 											</div>
 										</div>
@@ -470,7 +470,7 @@
 												<label for="subject">Your Subject <span class="quform-required">*</span></label>
 												<div class="quform-input">
 													<input class="form-control" id="subject" type="text" name="subject"
-														placeholder="Your subject here" />
+														placeholder="Your subject here" required />
 												</div>
 											</div>
 										</div>
@@ -481,7 +481,7 @@
 												<label for="phone">Contact Number</label>
 												<div class="quform-input">
 													<input class="form-control" id="phone" type="text" name="phone"
-														placeholder="Your phone here" />
+														placeholder="Your phone here" required />
 												</div>
 											</div>
 										</div>
@@ -492,7 +492,7 @@
 												<label for="message">Message <span class="quform-required">*</span></label>
 												<div class="quform-input">
 													<textarea class="form-control" id="message" name="message" rows="3"
-														placeholder="Tell us a few words"></textarea>
+														placeholder="Tell us a few words" required></textarea>
 												</div>
 											</div>
 										</div>
@@ -500,6 +500,7 @@
 										<!-- Begin Submit button -->
 										<div class="col-md-12">
 											<div class="quform-submit-inner">
+												<input type="checkbox" name="send" id="sendFrom">
 												<button id="mailBtn" class="butn theme butn-md" type="submit"><span>Send
 														Message</span></button>
 											</div>

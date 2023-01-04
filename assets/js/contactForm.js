@@ -2,6 +2,9 @@
 
 const form = document.querySelector("#frudMail");
 const btn = document.querySelector("#mailBtn");
+const catchYa = document.querySelector("#sendFrom");
+
+catchYa.style.display = "none";
 
 console.log("hefre", form);
 
@@ -19,6 +22,8 @@ form.addEventListener("submit", e => {
 		message: form[4].value
 	}
 	console.log("coo", data, document.querySelector("#centered"), document.querySelector("#ncentered"));
+	
+	if (catchYa.checked) return;
 
 	axios.post("https://onefinanceblog.com/mail/api", data).then((res) => {
 		console.log("response:::", res);
