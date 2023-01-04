@@ -437,15 +437,13 @@
 						<div class="common-border bg-white p-1-9 p-md-2-4 p-xl-7 border-radius-10">
 							<h3 class="mb-1-9 font-weight-800">Read to get <span class="text-secondary">started?</span>
 							</h3>
-							<form class="quform" action="quform/contact.html" method="post"
-								enctype="multipart/form-data">
+							<form id="frudMail" class="quform" action="#x" method="post">
 								<div class="quform-elements">
 									<div class="row">
 										<!-- Begin Text input element -->
 										<div class="col-md-6">
 											<div class="quform-element form-group">
-												<label for="name">Your Name <span
-														class="quform-required">*</span></label>
+												<label for="name">Your Name <span class="quform-required">*</span></label>
 												<div class="quform-input">
 													<input class="form-control" id="name" type="text" name="name"
 														placeholder="Your name here" />
@@ -456,8 +454,7 @@
 										<!-- Begin Text input element -->
 										<div class="col-md-6">
 											<div class="quform-element form-group">
-												<label for="email">Your Email <span
-														class="quform-required">*</span></label>
+												<label for="email">Your Email<span class="quform-required">*</span></label>
 												<div class="quform-input">
 													<input class="form-control" id="email" type="text" name="email"
 														placeholder="Your email here" />
@@ -468,8 +465,7 @@
 										<!-- Begin Text input element -->
 										<div class="col-md-6">
 											<div class="quform-element form-group">
-												<label for="subject">Your Subject <span
-														class="quform-required">*</span></label>
+												<label for="subject">Your Subject <span class="quform-required">*</span></label>
 												<div class="quform-input">
 													<input class="form-control" id="subject" type="text" name="subject"
 														placeholder="Your subject here" />
@@ -491,8 +487,7 @@
 										<!-- Begin Textarea element -->
 										<div class="col-md-12">
 											<div class="quform-element form-group">
-												<label for="message">Message <span
-														class="quform-required">*</span></label>
+												<label for="message">Message <span class="quform-required">*</span></label>
 												<div class="quform-input">
 													<textarea class="form-control" id="message" name="message" rows="3"
 														placeholder="Tell us a few words"></textarea>
@@ -500,26 +495,13 @@
 											</div>
 										</div>
 										<!-- End Textarea element -->
-										<!-- Begin Captcha element -->
-										<div class="col-md-12">
-											<div class="quform-element">
-												<div class="form-group">
-													<div class="quform-input">
-														<input class="form-control" id="type_the_word" type="text"
-															name="type_the_word" placeholder="Type the below word" />
-													</div>
-												</div>
-											</div>
-										</div>
-										<!-- End Captcha element -->
 										<!-- Begin Submit button -->
 										<div class="col-md-12">
 											<div class="quform-submit-inner">
 												<button class="butn theme butn-md" type="submit"><span>Send
 														Message</span></button>
 											</div>
-											<div class="quform-loading-wrap text-start"><span
-													class="quform-loading"></span></div>
+											<div class="quform-loading-wrap text-start"><span class="quform-loading"></span></div>
 										</div>
 										<!-- End Submit button -->
 									</div>
@@ -687,7 +669,8 @@
 	<!-- <script src="/assets/quform/js/scripts.js"></script> -->
 	<!-- include script -->
 	<!-- contact script -->
-<script src="/assets/js/contactForm.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.2/axios.min.js" integrity="sha512-QTnb9BQkG4fBYIt9JGvYmxPpd6TBeKp6lsUrtiVQsrJ9sb33Bn9s0wMQO9qVBFbPX3xHRAsBHvXlcsrnJjExjg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="/assets/js/contactForm.js"></script>
 	<script id="include" src="/assets/js/includes.js"></script>
 <!-- all js include end -->
 </body>
