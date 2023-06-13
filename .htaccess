@@ -1,0 +1,12 @@
+RewriteBase /
+RewriteEngine on 
+
+#WARNING: NEEDED FOR ONLINE VERSION - always have www in url 
+RewriteCond %{HTTP_HOST} !^www\. [NC] 
+RewriteRule ^(.*)$ https://www.%{HTTP_HOST}%{REQUEST_URI} [R=301,l]
+
+RewriteCond %{REQUEST_FILENAME} !-f 
+RewriteCond %{REQUEST_FILENAME} !-d 
+
+RewriteCond %{HTTP:X-Forwarded-Proto} ^http$ 
+RewriteRule (.*) https://www.%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
