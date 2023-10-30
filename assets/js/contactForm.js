@@ -25,7 +25,7 @@ form.addEventListener("submit", e => {
 	
 	if (catchYa.checked) return;
 
-	axios.post("https://onefinanceblog.com/mail/api", data).then((res) => {
+	axios.post("http://localhost:5001/mail/api", data).then((res) => {
 		console.log("response:::", res);
 
 		$('#centered').modal('show');
