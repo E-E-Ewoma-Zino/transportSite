@@ -1,0 +1,85 @@
+
+.container-map {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.buttons-map {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    width: 100%;
+    gap: 10px;
+    /* background-color: #f4f4f4; */
+    /* border-right: 1px solid #ccc; */
+    /* padding: 10px; */
+}
+
+.buttons-map button {
+    margin: 10px 0;
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.buttons-map button:hover {
+    background-color: #0056b3;
+}
+
+.map {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.map iframe {
+    margin-top: 20px;
+    border: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* .hero-bg{
+    background-image:url("/assets/img/content/location-bg.jpg");
+    width: 100%;
+    height: 90vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  } */
+
+
+  @media only screen and (min-width: 640px) {
+    .container-map {
+        display: flex;
+        width: 100%;
+        height: 100%;
+    }
+
+    .buttons-map {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 30%;
+        /* background-color: #f4f4f4; */
+        /* border-right: 1px solid #ccc; */
+        /* padding: 10px; */
+    }
+
+    .map iframe {
+        /* margin-top: 20px; */
+        border: 0;
+        width: 90%;
+        height: 90%;
+    }
+  }

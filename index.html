@@ -39,6 +39,71 @@
 	<link rel="stylesheet" href="/assets/quform/css/base.css">
 	<!-- core style css -->
 	<link href="/assets/css/styles.css" rel="stylesheet">
+
+	<!-- style for the carousel css -->
+	<link rel="stylesheet" href="/assets/carousel/carousel.css">
+
+	<!-- tailwind CDN -->
+	<script src="https://cdn.tailwindcss.com"></script>
+
+	<!-- tailwind custom configuration -->
+	<script>
+		tailwind.config = {
+		  prefix: "tw-",
+		  corePlugins: {
+			 preflight: false,
+		  }
+		}
+	</script>
+
+
+<style>
+	.modal-body {
+		text-align: center;
+		font-size: 1.1rem;
+		line-height: 1.6;
+		color: #333;
+	}
+	.promo-highlight {
+		font-weight: bold;
+		color: #007BFF;
+	}
+	.modal-footer {
+		justify-content: center;
+	}
+	.btn-quote {
+		background-color: #007BFF;
+		color: white;
+		font-weight: bold;
+	}
+	.btn-quote:hover {
+		background-color: #0056b3;
+	}
+
+
+	/* Default styles for the modal */
+	.custom-modal {
+		max-width: 100%;
+		height: 80%;
+	}
+
+	/* Adjust for medium screens */
+	@media only screen and (min-width: 768px) {
+		.custom-modal {
+			max-width: 80%; /* Reduce width slightly for tablets and larger screens */
+			height: 80%;
+		}
+	}
+
+	/* Adjust for large screens */
+	@media only screen and (min-width: 1024px) {
+		.custom-modal {
+			max-width: 70%; /* Smaller width for desktops */
+			height: 70%;
+		}
+	}
+</style>
+
 </head>
 
 <body>
@@ -164,6 +229,105 @@
 						</div>
 					</div>
 				</div>
+			</div>
+		</section>
+
+		<!-- NEW FEATURE
+        ================================================== -->
+		<section class="bg-light">
+			<div class="text-center w-95 w-md-90 w-lg-70 w-xl-60 mx-auto wow fadeIn" data-wow-delay="200ms">
+				<span class="text-uppercase letter-spacing-2 font-weight-700 small mb-3 d-block">As a trusted company.....</span>
+			</div>
+			<div class="tw-w-full md:tw-w-[80%] tw-p-4 md:tw-p-0 tw-mx-auto tw-text-black md:tw-flex 2xl:tw-max-w-7xl">
+				<div class="tw-block md:tw-flex tw-w-full md:tw-w-[50%] tw-gap-4">
+					<div class="tw-w-full tw-mb-4 md:tw-mb-0"><img class="tw-object-cover md:tw-h-full tw-h-[300px] tw-w-full" src="/assets/img/content/standingContainer.jpg" alt="..."></div>
+					<div class="tw-w-full"><img class="tw-object-cover md:tw-h-full tw-h-[300px] tw-w-full" src="/assets/img/content/containergreen.jpg" alt="..."></div>
+				</div>
+				<div class="tw-w-full md:tw-w-[50%] tw-p-4">
+					<div class="text-center mt-2 w-95 w-md-90 w-lg-70 w-xl-60 mx-auto wow fadeIn" data-wow-delay="200ms">
+						<span class="text-uppercase letter-spacing-2 font-weight-700 small mb-3 d-block">As a trusted company.....</span>
+					</div>
+
+					<h2 class="tw-text-3xl tw-font-bold tw-text-black tw-text-pretty">We provide full range of transport service.</h2>
+					<p class="tw-text-pretty">At Dock Container and Logistics Company, we specialize in delivering seamless, 
+						reliable, and efficient transport solutions tailored to meet your unique needs. 
+						Whether you're shipping goods across the country or around the world, we ensure safe 
+						and timely delivery every step of the way.
+					</p>
+
+					<div class="tw-flex tw-gap-4">
+							<img class="tw-object-contain tw-w-[70px] tw-h-[70px]" src="/assets/img/icons/shippingBoat.png" alt="...">
+						<p class="tw-text-pretty">
+							When speed and efficiency are critical, our air transport services ensure your 
+							goods reach their destination in record time.
+						</p>
+					</div>
+
+					<div class="tw-flex tw-gap-4 tw-pt-4 md:tw-pt-0">
+							<img class="tw-object-contain tw-w-[70px] tw-h-[70px]" src="/assets/img/icons/shpping.png" alt="...">
+
+						<p class="tw-text-pretty">
+							For large volumes and cost-effective solutions, our water transport services are 
+							the perfect choice, leveraging global shipping networks.
+						</p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="tw-w-[90%] tw-mx-auto tw-mt-24">
+				<div class="text-center w-95 w-md-90 w-lg-70 w-xl-60 mx-auto wow fadeIn" data-wow-delay="200ms">
+					<span class="text-uppercase letter-spacing-2 font-weight-700 small mb-3 d-block">Trusted by Our Clientele</span>
+				</div>
+				<carousel>
+					<img class="logo" src="https://upload.wikimedia.org/wikipedia/en/a/a2/FIRST_Logo.svg">
+						<img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/BAE_Systems_logo.svg/2560px-BAE_Systems_logo.svg.png" />
+						<img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/1/1d/PTC_logo.svg" />
+						<img class="logo" src="https://media.licdn.com/dms/image/C4E0BAQGY9Dev4YNovQ/company-logo_200_200/0/1630578110063/rev_robotics_logo?e=2147483647&v=beta&t=ocL5BXkuVOSReZHAXjGXnksXBt9BkGbT-SvNrBqnjqw" />
+					<!--<img class="logo" src="">-->
+				  
+						<!--DOUBLE-->
+					<img class="logo" src="https://upload.wikimedia.org/wikipedia/en/a/a2/FIRST_Logo.svg">
+						<img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/BAE_Systems_logo.svg/2560px-BAE_Systems_logo.svg.png" />
+						<img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/1/1d/PTC_logo.svg" />
+						<img class="logo" src="https://media.licdn.com/dms/image/C4E0BAQGY9Dev4YNovQ/company-logo_200_200/0/1630578110063/rev_robotics_logo?e=2147483647&v=beta&t=ocL5BXkuVOSReZHAXjGXnksXBt9BkGbT-SvNrBqnjqw" />
+					</carousel>
+			</div>
+			</div>
+		</section>
+
+
+
+
+		<!-- OUR PASSION ================================================== -->
+		<section>
+			<div class="text-center mb-5 w-95 w-md-90 w-lg-70 w-xl-60 mx-auto wow fadeIn" data-wow-delay="200ms">
+				<span class="text-uppercase letter-spacing-2 font-weight-700 small mb-3 d-block">our principles</span>
+				<h2 class="mb-0 font-weight-800 h1">A Company Fueled by Passion for <span
+						class="text-secondary">Logistics and Satisfaction</span></h2>
+			</div>
+			<div class="tw-w-full md:tw-w-[80%] tw-mx-auto md:tw-flex tw-gap-20 2xl:tw-max-w-7xl">
+				<div class="tw-w-full md:tw-w-[50%] tw-p-4">
+					<p class="tw-pt-4 tw-text-pretty">At the heart of our company lies an unwavering passion 
+						for logistics and a commitment to excellence. We believe that every shipment is more 
+						than just cargo—it’s a promise. Guided by this belief, we ensure that every detail is 
+						handled with precision, integrity, and care to deliver unparalleled satisfaction to our 
+						clients.
+					</p>
+					<img class="tw-object-contain tw-rounded-xl" src="/assets/img/content/portContainers.jpg" alt="">
+				</div>
+				<div class="tw-w-full md:tw-w-[50%] tw-p-4">
+					<img class="tw-object-contain tw-rounded-xl" src="/assets/img/content/containerHouse.jpg" alt="">
+
+					<p class="tw-pt-4 tw-text-pretty">Driven by innovation and a customer-first mindset, 
+						we constantly strive to exceed expectations. Our dedication to seamless operations 
+						and tailored solutions reflects our core principle: building trust through exceptional 
+						service. With us, logistics isn’t just a process—it’s a partnership.
+					</p>
+				</div>
+			</div>
+
+			<div class="col-md-12 text-center mt-5 wow fadeIn" data-wow-delay="1000ms">
+				<a href="/services.html" class="butn dark">Get Quote Now!</a>
 			</div>
 		</section>
 		<!-- SERVICES
@@ -636,6 +800,175 @@
 	</div>
 </div>
 
+    <!-- Promo Modal -->
+    <div class="modal fade" id="promoModal" tabindex="-1" aria-labelledby="promoModalLabel" aria-hidden="true">
+        <div class="modal-dialog custom-modal">
+            <div class="modal-content ">
+                <div class="modal-header">
+					<div class="modal-title text-center" id="promoModalLabel">
+						<h2 class="text-animation" data-in-effect="fadeInUp">BUY AND RENT SHIPPING CONTAINERS SPECIAL DEALS</h2>
+					</div>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-container tw-overflow-auto">
+					<div class="tw-block sm:tw-flex sm:tw-p-8">
+						<div class="tw-w-full sm:tw-w-[50%] tw-p-4">
+							<h2>Shipping Containers for Sale and Rent Across all States</h2>
+							<div class="tw-flex tw-gap-4 tw-p-2">
+								<img src="assets/img/icons/check-icon.png" class="tw-w-[25px] tw-h-[25px]" alt="">
+								<p class="tw-content-center">20ft and 40ft available for purchase and rent</p>
+							</div>
+							<div class="tw-flex tw-gap-4 tw-p-2">
+								<img src="assets/img/icons/check-icon.png" class="tw-w-[25px] tw-h-[25px]" alt="">
+								<p class="tw-content-center">Delivery between 3-5 business days</p>
+							</div>
+							<div class="tw-flex tw-gap-4 tw-p-2">
+								<img src="assets/img/icons/check-icon.png" class="tw-w-[25px] tw-h-[25px]" alt="">
+								<p class="tw-content-center">One of the worlds leading suppliers</p>
+							</div>
+
+							<!-- Quote message -->
+							<h3>20FT and 40FT are on sale for 25% less, VAT included.</h3>
+							<p>Buy more to save much more. Check out the regular incredible deals at our depots' 'let go stock'.</p>
+							<p>
+								Promotion, stock clearance, and numerous other offers from every set of:
+							</p>
+							<ul class="list-unstyled">
+								<li class="tw-font-bold tw-text-2xl">- Shipping containers</li>
+								<li class="tw-font-bold tw-text-2xl">- Site accommodation</li>
+								<li class="tw-font-bold tw-text-2xl">- Cold storage solutions</li>
+								<li class="tw-font-bold tw-text-2xl">- Portable offices</li>
+							</ul>
+						</div>
+						<div class="tw-h-full sm:tw-w-[50%] tw-p-6 tw-bg-white">
+							<h2 class="tw-text-start tw-mb-6">Get a Quote</h2>
+							<form id="containerForm" class="tw-space-y-4" novalidate>
+								<!-- New or Used Container -->
+								<div>
+									<label class="tw-block tw-font-medium tw-mb-2">Are you looking for a New Container or a Used One?</label>
+									<select class="tw-w-full tw-px-4 tw-py-2 tw-border tw-border-gray-300 tw-rounded-md" name="containerCondition" required>
+										<option selected disabled value="">Choose...</option>
+										<option value="New">New</option>
+										<option value="Used">Used</option>
+										<option value="Both">Both</option>
+									</select>
+									<div class="tw-text-red-500 tw-text-sm tw-mt-1 tw-hidden error-message">Please select a container condition.</div>
+								</div>
+					
+								<!-- Full Name -->
+								<div>
+									<label class="tw-block tw-font-medium tw-mb-2">Full Name</label>
+									<input type="text" class="tw-w-full tw-px-4 tw-py-2 tw-border tw-border-gray-300 tw-rounded-md" name="fullName" placeholder="Enter your full name" required>
+								</div>
+					
+								<!-- Email -->
+								<div>
+									<label class="tw-block tw-font-medium tw-mb-2">Email <span class="tw-text-gray-500">(so we can email your quote to you)</span></label>
+									<input type="email" class="tw-w-full tw-px-4 tw-py-2 tw-border tw-border-gray-300 tw-rounded-md" name="email" placeholder="Enter your email" required>
+									<div class="tw-text-red-500 tw-text-sm tw-mt-1 tw-hidden error-message">Please enter a valid email address.</div>
+								</div>
+					
+								<!-- Phone -->
+								<div>
+									<label class="tw-block tw-font-medium tw-mb-2">Phone <span class="tw-text-gray-500">(for delivery purposes only, not for marketing)</span></label>
+									<input type="tel" class="tw-w-full tw-px-4 tw-py-2 tw-border tw-border-gray-300 tw-rounded-md" name="phone" placeholder="Enter your phone number" required>
+									<div class="tw-text-red-500 tw-text-sm tw-mt-1 tw-hidden error-message">Please enter a valid phone number.</div>
+								</div>
+					
+								<!-- Delivery Zip Code and State -->
+								<div class="tw-grid tw-grid-cols-1 lg:tw-grid-cols-2 tw-gap-4">
+									<div>
+										<label class="tw-block tw-font-medium tw-mb-2">Delivery Zip Code</label>
+										<input type="text" class="tw-w-full tw-px-4 tw-py-2 tw-border tw-border-gray-300 tw-rounded-md" name="zipCode" placeholder="Enter zip code" required>
+									</div>
+									<div>
+										<label class="tw-block tw-font-medium tw-mb-2">State</label>
+										<select class="tw-w-full tw-px-4 tw-py-2 tw-border tw-border-gray-300 tw-rounded-md" name="state" required>
+											<option selected disabled value="">Choose...</option>
+											<option value="California">California</option>
+											<option value="Texas">Texas</option>
+											<option value="Florida">Florida</option>
+											<option value="New York">New York</option>
+											<option value="Other">Other</option>
+										</select>
+										<div class="tw-text-red-500 tw-text-sm tw-mt-1 tw-hidden error-message">Please select a state.</div>
+									</div>
+								</div>
+					
+								<!-- Buy or Rent -->
+								<div>
+									<label class="tw-block tw-font-medium tw-mb-2">Buy or Rent</label>
+									<select class="tw-w-full tw-px-4 tw-py-2 tw-border tw-border-gray-300 tw-rounded-md" name="buyOrRent" required>
+										<option selected disabled value="">Choose...</option>
+										<option value="Buy">Buy</option>
+										<option value="Rent">Rent</option>
+										<option value="Unsure">Unsure (both)</option>
+									</select>
+									<div class="tw-text-red-500 tw-text-sm tw-mt-1 tw-hidden error-message">Please select whether you want to buy or rent.</div>
+								</div>
+					
+								<!-- Container Size -->
+								<div>
+									<label class="tw-block tw-font-medium tw-mb-2">Container Size</label>
+									<div class="tw-grid tw-grid-cols-3 tw-gap-4">
+										<div>
+											<label class="tw-block tw-font-medium">20FT / Units</label>
+											<input type="number" class="tw-w-full tw-px-4 tw-py-2 tw-border tw-border-gray-300 tw-rounded-md" name="20ftUnits" value="1" min="1" required>
+										</div>
+										<div>
+											<label class="tw-block tw-font-medium">40FT / Units</label>
+											<input type="number" class="tw-w-full tw-px-4 tw-py-2 tw-border tw-border-gray-300 tw-rounded-md" name="40ftUnits" value="1" min="1" required>
+										</div>
+										<div>
+											<label class="tw-block tw-font-medium">10FT / Units</label>
+											<input type="number" class="tw-w-full tw-px-4 tw-py-2 tw-border tw-border-gray-300 tw-rounded-md" name="10ftUnits" value="1" min="1" required>
+										</div>
+									</div>
+								</div>
+					
+								<!-- Container Type -->
+								<div>
+									<label class="tw-block tw-font-medium tw-mb-2">Container Type</label>
+									<select class="tw-w-full tw-px-4 tw-py-2 tw-border tw-border-gray-300 tw-rounded-md" name="containerType" required>
+										<option selected disabled value="">Choose...</option>
+										<option value="General">General purposes containers</option>
+										<option value="Standard">Standard Containers</option>
+										<option value="HighCube">High cube containers</option>
+										<option value="Specialized">Specialized containers</option>
+										<option value="Modified">Modified containers</option>
+									</select>
+									<div class="tw-text-red-500 tw-text-sm tw-mt-1 tw-hidden error-message">Please select a container type.</div>
+								</div>
+					
+								<!-- Delivery Time -->
+								<div>
+									<label class="tw-block tw-font-medium tw-mb-2">When Do You Want It Delivered</label>
+									<select class="tw-w-full tw-px-4 tw-py-2 tw-border tw-border-gray-300 tw-rounded-md" name="deliveryTime" required>
+										<option selected disabled value="">Choose...</option>
+										<option value="1-7">1-7 days</option>
+										<option value="8-14">8-14 days</option>
+										<option value="15+">15+ days</option>
+										<option value="SpecialDate">On a special date</option>
+									</select>
+									<div class="tw-text-red-500 tw-text-sm tw-mt-1 tw-hidden error-message">Please select a delivery time.</div>
+								</div>
+					
+								<!-- Special Message -->
+								<div>
+									<label class="tw-block tw-font-medium tw-mb-2">Special Message</label>
+									<textarea class="tw-w-full tw-px-4 tw-py-2 tw-border tw-border-gray-300 tw-rounded-md" name="specialMessage" rows="4" placeholder="Enter any additional information here"></textarea>
+								</div>
+					
+								<!-- Submit Button -->
+								<button type="submit" class="tw-w-full tw-px-4 tw-py-2 tw-bg-blue-500 tw-text-white tw-font-bold tw-rounded-md hover:tw-bg-blue-700">Get Quote</button>
+							</form>
+						</div>
+					</div>				
+                </div>
+            </div>
+        </div>
+    </div>
+
 <!-- Vertically centered -->
 <div class="modal fade" id="ncentered" tabindex="-1" aria-labelledby="centeredLabel" aria-hidden="true">
 	<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
@@ -678,6 +1011,39 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.2/axios.min.js" integrity="sha512-QTnb9BQkG4fBYIt9JGvYmxPpd6TBeKp6lsUrtiVQsrJ9sb33Bn9s0wMQO9qVBFbPX3xHRAsBHvXlcsrnJjExjg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	<script src="/assets/js/contactForm.js"></script>
 	<script id="include" src="/assets/js/includes.js"></script>
+	<script src="/assets/carousel/carousel.js"></script>
+
+    <script>
+        const form = document.getElementById('containerForm');
+        form.addEventListener('submit', function (e) {
+            const inputs = form.querySelectorAll('[required]');
+            let valid = true;
+
+            inputs.forEach(input => {
+                const error = input.parentElement.querySelector('.error-message');
+                if (!input.value) {
+                    error.classList.remove('tw-hidden');
+                    valid = false;
+                } else {
+                    error.classList.add('tw-hidden');
+                }
+            });
+
+            if (!valid) {
+                e.preventDefault();
+                alert('Please fill all required fields.');
+            }
+        });
+    </script>
+
+	<script>
+        // Show the modal when the page loads
+        window.onload = function () {
+            const promoModal = new bootstrap.Modal(document.getElementById('promoModal'));
+            promoModal.show();
+        };
+    </script>
+
 <!-- all js include end -->
 </body>
 

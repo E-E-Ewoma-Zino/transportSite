@@ -40,6 +40,20 @@
 <!-- core style css -->
 <link href="/assets/css/styles.css" rel="stylesheet">
 
+
+	<!-- tailwind CDN -->
+	<script src="https://cdn.tailwindcss.com"></script>
+
+	<!-- tailwind custom configuration -->
+	<script>
+		tailwind.config = {
+		  prefix: "tw-",
+		  corePlugins: {
+			 preflight: false,
+		  }
+		}
+	</script>
+
 </head>
 
 <body>
@@ -283,6 +297,165 @@
 			</div>
 		</section>
 
+
+		<!-- QUOTA FORM
+        ================================================== -->
+		<section class="bg-light">
+			<div class="tw-w-full sm:tw-w-[80%] tw-mx-auto">
+				<div class="tw-h-full tw-p-6 tw-bg-white">
+					<div class="text-center mb-5 w-95 w-md-90 w-lg-70 w-xl-60 mx-auto wow fadeIn" data-wow-delay="200ms">
+						<span class="text-uppercase letter-spacing-2 font-weight-700 small mb-3 d-block">Get a Quote</span>
+						<h2 class="mb-0 font-weight-800 h1">Trusted by Our Clientele, <span
+								class="text-secondary">Get a Quote for the container you want</span></h2>
+					</div>
+					<form id="containerForm" class="tw-space-y-4" novalidate>
+						<!-- New or Used Container -->
+						<div>
+							<label class="tw-block tw-font-medium tw-mb-2">Are you looking for a New Container or a Used One?</label>
+							<select class="tw-w-full tw-px-4 tw-py-2 tw-border tw-border-gray-300 tw-rounded-md" name="containerCondition" required>
+								<option selected disabled value="">Choose...</option>
+								<option value="New">New</option>
+								<option value="Used">Used</option>
+								<option value="Both">Both</option>
+							</select>
+							<div class="tw-text-red-500 tw-text-sm tw-mt-1 tw-hidden error-message">Please select a container condition.</div>
+						</div>
+			
+						<!-- Full Name -->
+						<div>
+							<label class="tw-block tw-font-medium tw-mb-2">Full Name</label>
+							<input type="text" class="tw-w-full tw-px-4 tw-py-2 tw-border tw-border-gray-300 tw-rounded-md" name="fullName" placeholder="Enter your full name" required>
+						</div>
+			
+						<!-- Email -->
+						<div>
+							<label class="tw-block tw-font-medium tw-mb-2">Email <span class="tw-text-gray-500">(so we can email your quote to you)</span></label>
+							<input type="email" class="tw-w-full tw-px-4 tw-py-2 tw-border tw-border-gray-300 tw-rounded-md" name="email" placeholder="Enter your email" required>
+							<div class="tw-text-red-500 tw-text-sm tw-mt-1 tw-hidden error-message">Please enter a valid email address.</div>
+						</div>
+			
+						<!-- Phone -->
+						<div>
+							<label class="tw-block tw-font-medium tw-mb-2">Phone <span class="tw-text-gray-500">(for delivery purposes only, not for marketing)</span></label>
+							<input type="tel" class="tw-w-full tw-px-4 tw-py-2 tw-border tw-border-gray-300 tw-rounded-md" name="phone" placeholder="Enter your phone number" required>
+							<div class="tw-text-red-500 tw-text-sm tw-mt-1 tw-hidden error-message">Please enter a valid phone number.</div>
+						</div>
+			
+						<!-- Delivery Zip Code and State -->
+						<div class="tw-grid tw-grid-cols-1 lg:tw-grid-cols-2 tw-gap-4">
+							<div>
+								<label class="tw-block tw-font-medium tw-mb-2">Delivery Zip Code</label>
+								<input type="text" class="tw-w-full tw-px-4 tw-py-2 tw-border tw-border-gray-300 tw-rounded-md" name="zipCode" placeholder="Enter zip code" required>
+							</div>
+							<div>
+								<label class="tw-block tw-font-medium tw-mb-2">State</label>
+								<select class="tw-w-full tw-px-4 tw-py-2 tw-border tw-border-gray-300 tw-rounded-md" name="state" required>
+									<option selected disabled value="">Choose...</option>
+									<option value="California">California</option>
+									<option value="Texas">Texas</option>
+									<option value="Florida">Florida</option>
+									<option value="New York">New York</option>
+									<option value="Other">Other</option>
+								</select>
+								<div class="tw-text-red-500 tw-text-sm tw-mt-1 tw-hidden error-message">Please select a state.</div>
+							</div>
+						</div>
+			
+						<!-- Buy or Rent -->
+						<div>
+							<label class="tw-block tw-font-medium tw-mb-2">Buy or Rent</label>
+							<select class="tw-w-full tw-px-4 tw-py-2 tw-border tw-border-gray-300 tw-rounded-md" name="buyOrRent" required>
+								<option selected disabled value="">Choose...</option>
+								<option value="Buy">Buy</option>
+								<option value="Rent">Rent</option>
+								<option value="Unsure">Unsure (both)</option>
+							</select>
+							<div class="tw-text-red-500 tw-text-sm tw-mt-1 tw-hidden error-message">Please select whether you want to buy or rent.</div>
+						</div>
+			
+						<!-- Container Size -->
+						<div>
+							<label class="tw-block tw-font-medium tw-mb-2">Container Size</label>
+							<div class="tw-grid tw-grid-cols-3 tw-gap-4">
+								<div>
+									<label class="tw-block tw-font-medium">20FT / Units</label>
+									<input type="number" class="tw-w-full tw-px-4 tw-py-2 tw-border tw-border-gray-300 tw-rounded-md" name="20ftUnits" value="1" min="1" required>
+								</div>
+								<div>
+									<label class="tw-block tw-font-medium">40FT / Units</label>
+									<input type="number" class="tw-w-full tw-px-4 tw-py-2 tw-border tw-border-gray-300 tw-rounded-md" name="40ftUnits" value="1" min="1" required>
+								</div>
+								<div>
+									<label class="tw-block tw-font-medium">10FT / Units</label>
+									<input type="number" class="tw-w-full tw-px-4 tw-py-2 tw-border tw-border-gray-300 tw-rounded-md" name="10ftUnits" value="1" min="1" required>
+								</div>
+							</div>
+						</div>
+			
+						<!-- Container Type -->
+						<div>
+							<label class="tw-block tw-font-medium tw-mb-2">Container Type</label>
+							<select class="tw-w-full tw-px-4 tw-py-2 tw-border tw-border-gray-300 tw-rounded-md" name="containerType" required>
+								<option selected disabled value="">Choose...</option>
+								<option value="General">General purposes containers</option>
+								<option value="Standard">Standard Containers</option>
+								<option value="HighCube">High cube containers</option>
+								<option value="Specialized">Specialized containers</option>
+								<option value="Modified">Modified containers</option>
+							</select>
+							<div class="tw-text-red-500 tw-text-sm tw-mt-1 tw-hidden error-message">Please select a container type.</div>
+						</div>
+			
+						<!-- Delivery Time -->
+						<div>
+							<label class="tw-block tw-font-medium tw-mb-2">When Do You Want It Delivered</label>
+							<select class="tw-w-full tw-px-4 tw-py-2 tw-border tw-border-gray-300 tw-rounded-md" name="deliveryTime" required>
+								<option selected disabled value="">Choose...</option>
+								<option value="1-7">1-7 days</option>
+								<option value="8-14">8-14 days</option>
+								<option value="15+">15+ days</option>
+								<option value="SpecialDate">On a special date</option>
+							</select>
+							<div class="tw-text-red-500 tw-text-sm tw-mt-1 tw-hidden error-message">Please select a delivery time.</div>
+						</div>
+			
+						<!-- Special Message -->
+						<div>
+							<label class="tw-block tw-font-medium tw-mb-2">Special Message</label>
+							<textarea class="tw-w-full tw-px-4 tw-py-2 tw-border tw-border-gray-300 tw-rounded-md" name="specialMessage" rows="4" placeholder="Enter any additional information here"></textarea>
+						</div>
+			
+						<!-- Submit Button -->
+						<button type="submit" class="tw-w-full tw-px-4 tw-py-2 tw-bg-blue-500 tw-text-white tw-border-none tw-font-bold tw-rounded-md hover:tw-bg-blue-700">Get Quote</button>
+					</form>
+				</div>
+
+
+				<!-- image and content -->
+				 <div class="tw-mt-4 sm:tw-mt-10 tw-p-4 sm:tw-p-0">
+					<div class="text-center mb-5 w-95 w-md-90 w-lg-70 w-xl-60 mx-auto wow fadeIn" data-wow-delay="200ms">
+						<h2 class="mb-0 font-weight-800 h1">Containers just for you <span
+								class="text-secondary">at DOCK CONTAINER AND LOGISTICS</span></h2>
+					</div>
+					<div class="tw-block sm:tw-flex sm:tw-flex-wrap">
+						<div class="tw-basis-[280px] tw-flex-grow">
+							<img class="tw-object-cover tw-h-[270px] tw-w-full" src="assets/img/container/buy-container.jpg" alt="">
+						</div>
+						<div class="tw-basis-[280px] tw-flex-grow tw-pt-2 sm:tw-p-4">
+							<h2>BUY</h2>
+							<p>We provide containers in a variety of conditions – New, used, and 
+								refurbished – and can accommodate any size from 10′ to 40’ and 45’ high cubes.
+								Our large purchasing power allows us to guarantee the best pricing for our customers.
+							</p>
+						</div>
+						<div class="tw-basis-[280px] tw-flex-grow">
+							<img class="tw-object-cover tw-h-[270px] tw-w-full" src="assets/img/container/rent-container.jpg" alt="">
+						</div>
+					</div>
+				 </div>
+			</div>
+		</section>
+
 		<!-- FOOTER
         ================================================== -->
 		<footer class="position-relative">
@@ -433,6 +606,31 @@
 	<!-- include script -->
 	<script id="include" src="/assets/js/includes.js"></script>
 	<!-- all js include end -->
+
+	 <!-- script for form validation -->
+	 <script>
+        const form = document.getElementById('containerForm');
+        form.addEventListener('submit', function (e) {
+            let isValid = true;
+
+            // Validate required fields
+            form.querySelectorAll('[required]').forEach((input) => {
+                const errorDiv = input.parentElement.querySelector('.error-message');
+                if (!input.value) {
+                    isValid = false;
+                    if (errorDiv) errorDiv.style.display = 'block';
+                } else {
+                    if (errorDiv) errorDiv.style.display = 'none';
+                }
+            });
+
+            // Prevent submission if any field is invalid
+            if (!isValid) {
+                e.preventDefault();
+                alert('Please fill in all required fields.');
+            }
+        });
+    </script>
 
 </body>
 
