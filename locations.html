@@ -265,6 +265,11 @@
 						</div>
 					</div>
 					<h2 class="tw-text-center tw-pt-8">We Serve All 50 U.S. States And Canada</h2>
+
+					<!-- list of locations icon -->
+					<div class="tw-mx-auto">
+						<div id="stateContainer" class="tw-grid tw-grid-cols-2 md:tw-grid-cols-3 lg:tw-grid-cols-4"></div>
+					</div>
 				</div>
 
 				<div class="tw-block sm:tw-flex tw-gap-20 tw-mt-24">
@@ -383,13 +388,13 @@
 				</div>
 				<div class="container-map">
 					<div class="buttons-map">
-						<button onclick="updateMap(0)">10421 S Jordan Gateway, South Jordan, UT 84095, USA</button>
-						<button onclick="updateMap(1)">1520 Pier C St, Long Beach, CA 90813, USA</button>
-						<button onclick="updateMap(2)">4450 Robertson Rd, Madison, WI 53714.</button>
+						<!-- <button onclick="updateMap(0)">10421 S Jordan Gateway, South Jordan, UT 84095, USA</button> -->
+						<button onclick="updateMap(0)">1520 Pier C St, Long Beach, CA 90813, USA</button>
+						<!-- <button onclick="updateMap(2)">4450 Robertson Rd, Madison, WI 53714.</button> -->
 					</div>
 					<div class="map">
 						<iframe id="mapFrame" 
-							src="https://www.google.com/maps/embed/v1/place?q=10421+S+Jordan+Gateway,+South+Jordan,+UT+84095.&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
+							src="https://www.google.com/maps/embed/v1/place?q=1520+Pier+C+St,+Longbeach,+CA+90813&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
 							loading="lazy" referrerpolicy="no-referrer-when-downgrade">
 						</iframe>
 					</div>
@@ -532,5 +537,8 @@
 
 	<!-- location script -->
 	<script src="/assets/locationStyle/location.js"></script>
+
+	<!-- address location -->
+	<script src="/assets/js/address-location.js"></script>
 </body>
 </html>

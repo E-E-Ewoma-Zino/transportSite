@@ -42,6 +42,19 @@
 	<link rel="stylesheet" href="/assets/quform/css/base.css">
 	<!-- core style css -->
 	<link href="/assets/css/styles.css" rel="stylesheet">
+
+	<!-- tailwind CDN -->
+	<script src="https://cdn.tailwindcss.com"></script>
+
+	<!-- tailwind custom configuration -->
+	<script>
+		tailwind.config = {
+			prefix: "tw-",
+			corePlugins: {
+				preflight: false,
+			}
+		}
+	</script>
 </head>
 
 <body>
@@ -138,84 +151,128 @@
 					<div class="col-lg-6 border-radius-10 bg-img cover-background"
 						data-background="/assets/img/banner/banner-02.jpg"></div>
 					<div class="col-lg-6">
-						<div class="common-border bg-white p-1-9 p-md-2-4 p-xl-7 border-radius-10">
+						<div class="tw-h-full tw-w-full tw-p-6 tw-bg-white tw-rounded-lg tw-shadow-lg">
 							<h3 class="mb-1-9 font-weight-800">Read to get <span class="text-secondary">started?</span>
 							</h3>
-							<form id="frudMail" class="quform" action="#x" method="post">
-								<div class="quform-elements">
-									<div class="row">
-										<!-- Begin Text input element -->
-										<div class="col-md-6">
-											<div class="quform-element form-group">
-												<label for="name">Your Name <span
-														class="quform-required">*</span></label>
-												<div class="quform-input">
-													<input class="form-control" id="name" type="text" name="name"
-														placeholder="Your name here" required />
-												</div>
-											</div>
-										</div>
-										<!-- End Text input element -->
-										<!-- Begin Text input element -->
-										<div class="col-md-6">
-											<div class="quform-element form-group">
-												<label for="email">Your Email<span
-														class="quform-required">*</span></label>
-												<div class="quform-input">
-													<input class="form-control" id="email" type="text" name="email"
-														placeholder="Your email here" required />
-												</div>
-											</div>
-										</div>
-										<!-- End Text input element -->
-										<!-- Begin Text input element -->
-										<div class="col-md-6">
-											<div class="quform-element form-group">
-												<label for="subject">Your Subject <span
-														class="quform-required">*</span></label>
-												<div class="quform-input">
-													<input class="form-control" id="subject" type="text" name="subject"
-														placeholder="Your subject here" required />
-												</div>
-											</div>
-										</div>
-										<!-- End Text input element -->
-										<!-- Begin Text input element -->
-										<div class="col-md-6">
-											<div class="quform-element form-group">
-												<label for="phone">Contact Number</label>
-												<div class="quform-input">
-													<input class="form-control" id="phone" type="text" name="phone"
-														placeholder="Your phone here" required />
-												</div>
-											</div>
-										</div>
-										<!-- End Text input element -->
-										<!-- Begin Textarea element -->
-										<div class="col-md-12">
-											<div class="quform-element form-group">
-												<label for="message">Message <span
-														class="quform-required">*</span></label>
-												<div class="quform-input">
-													<textarea class="form-control" id="message" name="message" rows="3"
-														placeholder="Tell us a few words" required></textarea>
-												</div>
-											</div>
-										</div>
-										<!-- End Textarea element -->
-										<!-- Begin Submit button -->
-										<div class="col-md-12">
-											<div class="quform-submit-inner">
-												<input type="checkbox" name="send" id="sendFrom">
-												<button id="mailBtn" class="butn theme butn-md" type="submit"><span>Send
-														Message</span></button>
-											</div>
-											<div class="quform-loading-wrap text-start"><span
-													class="quform-loading"></span></div>
-										</div>
-										<!-- End Submit button -->
+							<form id="containerForm" class="tw-space-y-4" action="quote.php" method="POST" novalidate>
+								<!-- New or Used Container -->
+								<div>
+									<label class="tw-block tw-font-medium tw-mb-2">Are you looking for a New Container or a Used One?</label>
+									<select class="tw-w-full tw-px-4 tw-py-2 tw-border tw-border-gray-300 tw-rounded-md" name="containerCondition" required>
+										<option selected disabled value="">Choose...</option>
+										<option value="New">New</option>
+										<option value="Used">Used</option>
+										<option value="Both">Both</option>
+									</select>
+									<div class="tw-text-red-500 tw-text-sm tw-mt-1 tw-hidden error-message">Please select a container condition.</div>
+								</div>
+					
+								<!-- Full Name -->
+								<div>
+									<label class="tw-block tw-font-medium tw-mb-2">Full Name</label>
+									<input type="text" class="tw-w-full tw-px-4 tw-py-2 tw-border tw-border-gray-300 tw-rounded-md" name="fullName" placeholder="Enter your full name" required>
+								</div>
+					
+								<!-- Email -->
+								<div>
+									<label class="tw-block tw-font-medium tw-mb-2">Email <span class="tw-text-gray-500">(so we can email your quote to you)</span></label>
+									<input type="email" class="tw-w-full tw-px-4 tw-py-2 tw-border tw-border-gray-300 tw-rounded-md" name="email" placeholder="Enter your email" required>
+									<div class="tw-text-red-500 tw-text-sm tw-mt-1 tw-hidden error-message">Please enter a valid email address.</div>
+								</div>
+					
+								<!-- Phone -->
+								<div>
+									<label class="tw-block tw-font-medium tw-mb-2">Phone <span class="tw-text-gray-500">(for delivery purposes only, not for marketing)</span></label>
+									<input type="tel" class="tw-w-full tw-px-4 tw-py-2 tw-border tw-border-gray-300 tw-rounded-md" name="phone" placeholder="Enter your phone number" required>
+									<div class="tw-text-red-500 tw-text-sm tw-mt-1 tw-hidden error-message">Please enter a valid phone number.</div>
+								</div>
+					
+								<!-- Delivery Zip Code and State -->
+								<div class="tw-grid tw-grid-cols-1 lg:tw-grid-cols-2 tw-gap-4">
+									<div>
+										<label class="tw-block tw-font-medium tw-mb-2">Delivery Zip Code</label>
+										<input type="text" class="tw-w-full tw-px-4 tw-py-2 tw-border tw-border-gray-300 tw-rounded-md" name="zipCode" placeholder="Enter zip code" required>
+									</div>
+									<div>
+										<label class="tw-block tw-font-medium tw-mb-2">State</label>
+										<select class="tw-w-full tw-px-4 tw-py-2 tw-border tw-border-gray-300 tw-rounded-md" name="state" required>
+											<option selected disabled value="">Choose...</option>
+											<option value="California">California</option>
+											<option value="Texas">Texas</option>
+											<option value="Florida">Florida</option>
+											<option value="New York">New York</option>
+											<option value="Other">Other</option>
+										</select>
+										<div class="tw-text-red-500 tw-text-sm tw-mt-1 tw-hidden error-message">Please select a state.</div>
 									</div>
 								</div>
+					
+								<!-- Buy or Rent -->
+								<div>
+									<label class="tw-block tw-font-medium tw-mb-2">Buy or Rent</label>
+									<select class="tw-w-full tw-px-4 tw-py-2 tw-border tw-border-gray-300 tw-rounded-md" name="buyOrRent" required>
+										<option selected disabled value="">Choose...</option>
+										<option value="Buy">Buy</option>
+										<option value="Rent">Rent</option>
+										<option value="Unsure">Unsure (both)</option>
+									</select>
+									<div class="tw-text-red-500 tw-text-sm tw-mt-1 tw-hidden error-message">Please select whether you want to buy or rent.</div>
+								</div>
+					
+								<!-- Container Size -->
+								<div>
+									<label class="tw-block tw-font-medium tw-mb-2">Container Size</label>
+									<div class="tw-grid tw-grid-cols-3 tw-gap-4">
+										<div>
+											<label class="tw-block tw-font-medium">20FT / Units</label>
+											<input type="number" class="tw-w-full tw-px-4 tw-py-2 tw-border tw-border-gray-300 tw-rounded-md" name="20ftUnits" value="1" min="1" required>
+										</div>
+										<div>
+											<label class="tw-block tw-font-medium">40FT / Units</label>
+											<input type="number" class="tw-w-full tw-px-4 tw-py-2 tw-border tw-border-gray-300 tw-rounded-md" name="40ftUnits" value="1" min="1" required>
+										</div>
+										<div>
+											<label class="tw-block tw-font-medium">10FT / Units</label>
+											<input type="number" class="tw-w-full tw-px-4 tw-py-2 tw-border tw-border-gray-300 tw-rounded-md" name="10ftUnits" value="1" min="1" required>
+										</div>
+									</div>
+								</div>
+					
+								<!-- Container Type -->
+								<div>
+									<label class="tw-block tw-font-medium tw-mb-2">Container Type</label>
+									<select class="tw-w-full tw-px-4 tw-py-2 tw-border tw-border-gray-300 tw-rounded-md" name="containerType" required>
+										<option selected disabled value="">Choose...</option>
+										<option value="General">General purposes containers</option>
+										<option value="Standard">Standard Containers</option>
+										<option value="HighCube">High cube containers</option>
+										<option value="Specialized">Specialized containers</option>
+										<option value="Modified">Modified containers</option>
+									</select>
+									<div class="tw-text-red-500 tw-text-sm tw-mt-1 tw-hidden error-message">Please select a container type.</div>
+								</div>
+					
+								<!-- Delivery Time -->
+								<div>
+									<label class="tw-block tw-font-medium tw-mb-2">When Do You Want It Delivered</label>
+									<select class="tw-w-full tw-px-4 tw-py-2 tw-border tw-border-gray-300 tw-rounded-md" name="deliveryTime" required>
+										<option selected disabled value="">Choose...</option>
+										<option value="1-7">1-7 days</option>
+										<option value="8-14">8-14 days</option>
+										<option value="15+">15+ days</option>
+										<option value="SpecialDate">On a special date</option>
+									</select>
+									<div class="tw-text-red-500 tw-text-sm tw-mt-1 tw-hidden error-message">Please select a delivery time.</div>
+								</div>
+					
+								<!-- Special Message -->
+								<div>
+									<label class="tw-block tw-font-medium tw-mb-2">Special Message</label>
+									<textarea class="tw-w-full tw-px-4 tw-py-2 tw-border tw-border-gray-300 tw-rounded-md" name="specialMessage" rows="4" placeholder="Enter any additional information here"></textarea>
+								</div>
+					
+								<!-- Submit Button -->
+								<button type="submit" class="tw-w-full tw-px-4 tw-py-2 tw-bg-blue-500 tw-text-white tw-font-bold tw-rounded-md hover:tw-bg-blue-700">Get Quote</button>
 							</form>
 						</div>
 					</div>
@@ -258,12 +315,12 @@
 											<i class="fas fa-map-marker-alt text-primary fs-3"></i>
 										</div>
 										<div class="flex-grow-1 ms-3">
-											<address class="d-block mb-0 text-white">Container Yard <br>Section 10 Carlton Township, Tama, IA</address>
+											<address class="d-block mb-0 text-white">1520 Pier C St, <br>LongBeach, CA 90813.</address>
 										</div>
-										<div class="flex-grow-1 ms-3">
+										<!-- <div class="flex-grow-1 ms-3">
 											<address class="d-block mb-0 text-white">100 Oceangate, Long Beach, CA 90802.</address>
 											</address>
-										</div>
+										</div> -->
 									</div>
 								</li>
 							</ul>
